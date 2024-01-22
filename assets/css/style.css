@@ -1,54 +1,105 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.debug{
+.debug {
   border: 1px dotted black;
 }
 
-header{
-  height: 100px;
+header {
+  /* height: 100px; */
+  background-color: #ff6900;
+  position: relative;
 }
 
-body{
+body {
   background-color: white;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.d-flex{
+main{
+  margin-top: 50px
+}
+
+.d-flex {
   display: flex;
 }
 
-.container{
+.container {
   margin: 0 auto;
   width: 1000px;
 }
 
-.row{
+
+/* HEADER */
+
+.topbar {
+  padding: 10px;
+}
+
+.topbar .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar img{
+  max-width: 150px;
+}
+
+.topbar .menu {
+  width: 20%;
+}
+
+.menu.right{
+  list-style: none;
+}
+
+.topbar .menu ul {
+  justify-content: space-between;
+  list-style: none;
+}
+
+
+.topbar .menu ul a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topbar .menu ul a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* MAIN */
+.row {
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.card{
+.card {
   margin-bottom: 20px;
   position: relative;
 
 }
-.card img{
+
+.card img {
   max-width: 320px;
 }
 
-.card .info .prod-title{
+.card .info .prod-title {
   text-transform: uppercase;
 
 }
 
-.card .heart{
+.card .heart {
   position: absolute;
   right: 0;
   top: 5px;
@@ -57,11 +108,11 @@ img{
   font-weight: 800;
 }
 
-.card .heart:hover{
+.card .heart:hover {
   color: red;
 }
 
-.card .disc{
+.card .disc {
   position: absolute;
   left: 0;
   bottom: 100px;
@@ -71,7 +122,7 @@ img{
   font-weight: 800;
 }
 
-.card .sost{
+.card .sost {
   position: absolute;
   left: 55px;
   bottom: 100px;
@@ -81,22 +132,47 @@ img{
   font-weight: 800;
 }
 
-.card .prod-disc-price{
+.card .prod-disc-price {
   color: #ff0000;
   font-weight: 800;
 }
 
-.card .prod-price{
+.card .prod-price {
   text-decoration: line-through;
 }
 
-.sec-image{
- display: none; 
+.sec-image {
+  display: none;
 }
 
-.card:hover .sec-image{
+.card:hover .sec-image {
   display: block;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+footer .container{
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+footer ul{
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px 0;
+}
+
+footer ul a{
+  color: #d9f0e2;
+  text-decoration: none;
 }
