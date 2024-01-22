@@ -26,6 +26,10 @@ main{
   margin-top: 50px
 }
 
+ul{
+  list-style: none;
+}
+
 .d-flex {
   display: flex;
 }
@@ -55,15 +59,15 @@ main{
   width: 20%;
 }
 
-.menu.right{
-  list-style: none;
+.menu.left li{
+  padding: 0 5px;
 }
 
-.topbar .menu ul {
-  justify-content: space-between;
+.menu.right li{
   list-style: none;
+  padding: 0 5px;
+  align-self: flex-end;
 }
-
 
 .topbar .menu ul a {
   color: white;
@@ -132,6 +136,10 @@ main{
   font-weight: 800;
 }
 
+.brand{
+  font-size: 0.8rem;
+}
+
 .card .prod-disc-price {
   color: #ff0000;
   font-weight: 800;
@@ -168,7 +176,6 @@ footer .container{
 
 footer ul{
   justify-content: space-between;
-  list-style: none;
   padding: 5px 0;
 }
 
