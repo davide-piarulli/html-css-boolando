@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.debug{
+  border: 1px dotted black;
+}
+
+header{
+  height: 100px;
+}
+
+body{
+  background-color: white;
+}
+
+img{
+  max-width: 100%;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.container{
+  margin: 0 auto;
+  height: 560px;
+  width: 565px;
+}
+
+.card{
+  width: 178px;
+  height: 256px;
+  /* background-image: url(../img/1.webp);
+  background-size: contain; */
+  justify-content: space-between;
+}
