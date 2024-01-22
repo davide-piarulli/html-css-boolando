@@ -36,7 +36,8 @@ img{
 
 .card{
   margin-bottom: 20px;
-  position: relative;  
+  position: relative;
+
 }
 .card img{
   max-width: 320px;
@@ -56,6 +57,10 @@ img{
   font-weight: 800;
 }
 
+.card .heart:hover{
+  color: red;
+}
+
 .card .disc{
   position: absolute;
   left: 0;
@@ -68,7 +73,7 @@ img{
 
 .card .sost{
   position: absolute;
-  left: 60px;
+  left: 55px;
   bottom: 100px;
   background-color: #008000;
   color: white;
@@ -83,4 +88,15 @@ img{
 
 .card .prod-price{
   text-decoration: line-through;
+}
+
+.sec-image{
+ display: none; 
+}
+
+.card:hover .sec-image{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
